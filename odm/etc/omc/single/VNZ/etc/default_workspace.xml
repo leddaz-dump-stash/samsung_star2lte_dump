@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<favorites xmlns:launcher="http://schemas.android.com/apk/res-auto/com.android.launcher3">
+	<homeGridInfo default="5x5"/>
+    <home>
+        <!--  screen [1]  -->
+        <!-- appwidget : Weather -->
+        <appwidget
+            launcher:screen="0"
+            launcher:packageName="com.sec.android.daemonapp"
+            launcher:className="com.sec.android.daemonapp.appwidget.WeatherAppWidget2x1"
+            launcher:x="1"
+            launcher:y="0"
+            launcher:spanX="3"
+            launcher:spanY="3" />
+
+        <!-- appwidget : Google app -->
+        <appwidget
+            launcher:screen="0"
+            launcher:packageName="com.google.android.googlequicksearchbox"
+            launcher:className="com.google.android.googlequicksearchbox.SearchWidgetProvider"
+            launcher:x="0"
+            launcher:y="4"
+            launcher:spanX="5"
+            launcher:spanY="1" />
+
+    </home>
+
+    <!-- Hotseat (We use the screen as the position of the item in the hotseat) -->
+    <hotseat>
+        <!-- Phone -->
+        <favorite
+            launcher:screen="0"
+            launcher:packageName="com.samsung.android.dialer"
+            launcher:className="com.samsung.android.dialer.DialtactsActivity" />
+
+        <!-- Messages -->
+        <favorite
+            launcher:screen="1"
+            launcher:packageName="com.samsung.android.messaging"
+            launcher:className="com.android.mms.ui.ConversationComposer" />
+
+        <!-- Internet -->
+        <favorite
+            launcher:screen="2"
+            launcher:packageName="com.sec.android.app.sbrowser"
+            launcher:className="com.sec.android.app.sbrowser.SBrowserMainActivity" />
+
+        <!-- Google Play Store -->
+        <favorite
+            launcher:screen="3"
+            launcher:packageName="com.android.vending"
+            launcher:className="com.android.vending.AssetBrowserActivity" />
+
+        <!-- Camera -->
+        <favorite
+            launcher:screen="4"
+            launcher:packageName="com.sec.android.app.camera"
+            launcher:className="com.sec.android.app.camera.Camera" />
+
+    </hotseat>
+
+</favorites>
